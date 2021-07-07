@@ -1,0 +1,50 @@
+/*
+ * Innovator Dev, passion for innovation
+ *
+ * @link https://innovator.dev
+ * @author Eugen Bușoiu
+ *
+ * Copyright 2021 Innovator Dev. All rights reserved.
+ */
+
+section {
+
+  // Let's get in touch section
+  &.get-in-touch {
+
+    position: relative;
+
+    padding: 0;
+    margin: 4em 0 0;
+
+    color: @textColorWhite;
+
+    h2 {
+      font-size: 1.4em;
+      margin: 0 0 .6em;
+    }
+
+    // Lists
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+
+      @media (min-width: @mediaQueryMedium) {
+        justify-content: flex-start;
+      }
+
+      li {
+        font-size: 1.1em;
+
+        @media (min-width: @mediaQueryMedium) {
+          margin: 0 0 0 1em;
+
+          &:nth-child(1) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

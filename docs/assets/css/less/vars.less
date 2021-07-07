@@ -1,0 +1,69 @@
+/*
+ * Innovator Dev, passion for innovation
+ *
+ * @link https://innovator.dev
+ * @author Eugen Bușoiu
+ *
+ * Copyright 2021 Innovator Dev. All rights reserved.
+ */
+
+// AWS S3 bucket path
+@S3: 'https://s3.innovator.dev/';
+
+// Devices
+// Small devices (landscape phones, 576px and up)
+@mediaQuerySmall: 576px;
+// Medium devices (tablets, 768px and up)
+@mediaQueryMedium: 768px;
+// Large devices (desktops, 992px and up)
+@mediaQueryLarge: 992px;
+// Extra large devices (large desktops, 1200px and up)
+@mediaQueryExtraLarge: 1200px;
+// HD
+@mediaQueryExtraLarge2x: 1400px;
+// QHD
+@mediaQueryExtraLarge3x: 1600px;
+// Full HD
+@mediaQueryExtraLarge4x: 1900px;
+
+// Cover
+@theCover: "app.cover/cover";
+@cover: "@{S3}@{theCover}.jpg";
+@cover-sm: "@{S3}@{theCover}-sm.jpg";
+
+// Colors
+@color1: #1dbcf0; // Logo color
+@color2: #3c78a2; // Logo secondary color
+
+@color3: rgba(248, 248, 248, 1); // Background color
+@color4: #222; // Text color
+@color5: #fff;
+@color6: rgba(85, 100, 114, 1); // Primary button background color
+@color7: rgba(85, 100, 114, .4); // Disabled button background color
+@color8: #ccc; // Separator
+@color9: #777; // Link border color
+
+// Text colors
+@textColor: @color4;
+@textColorHover: darken(@textColor, 10%);
+@textColorWhite: @color5;
+
+// Elements
+@backgroundColor: @color3;
+
+// Buttons
+@buttonDefaultBackgroundColor: @color6;
+@buttonDefaultBackgroundHoverColor: darken(@buttonDefaultBackgroundColor, 7%);
+@buttonDefaultTextColor: @textColorWhite;
+
+@buttonDisabledBackgroundColor: @color7;
+@buttonDisabledBackgroundHoverColor: @color7;
+@buttonDisabledTextColor: @textColor;
+
+@buttonLinkedInBackgroundColor: #0077b5;
+@buttonLinkedInBackgroundHoverColor: darken(@buttonLinkedInBackgroundColor, 7%);
+@buttonLinkedInTextColor: #fff;
+
+@buttonMediumBackgroundColor: #12100e;
+@buttonMediumBackgroundHoverColor: darken(@buttonMediumBackgroundColor, 7%);
+@buttonMediumTextColor: #fff;

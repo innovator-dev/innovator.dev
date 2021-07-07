@@ -1,0 +1,23 @@
+/*
+ * Innovator Dev, passion for innovation
+ *
+ * @link https://innovator.dev
+ * @author Eugen Bușoiu
+ *
+ * Copyright 2021 Innovator Dev. All rights reserved.
+ */
+
+// Button structure mixin
+.define-button (@textColor, @backgroundColor, @backgroundColorHover, @bottomBorderWidth: 3px) {
+  background-color: @backgroundColor;
+
+  color: @textColor;
+  text-decoration: none;
+
+  &:hover {
+    background-color: @backgroundColorHover;
+
+    color: @textColor;
+    text-decoration: none;
+  }
+}

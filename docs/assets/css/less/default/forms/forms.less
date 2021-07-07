@@ -1,0 +1,132 @@
+/*
+ * Innovator Dev, passion for innovation
+ *
+ * @link https://innovator.dev
+ * @author Eugen Bușoiu
+ *
+ * Copyright 2021 Innovator Dev. All rights reserved.
+ */
+
+// Default button
+.btn {
+
+  display: inline-block;
+
+  font-family: 'Nunito', Georgia, sans-serif;
+  font-size: 1em;
+
+  border-radius: .2em;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+
+  padding: 6px 20px;
+  border: 0;
+  transition: background-color .05s;
+
+  // Focus/Active states
+  &:focus, &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  // Large button
+  &.btn-lg {
+    font-size: 1.5em;
+    padding: 10px 18px;
+  }
+
+  // Small button
+  &.btn-sm {
+    font-size: .88em;
+    padding: 4px 8px;
+  }
+
+  // Centered button
+  &.btn-centered {
+    display: table;
+    margin: auto;
+  }
+
+  // Disabled button
+  &.btn-disabled,
+  &:disabled {
+    .define-button(@buttonDisabledTextColor, @buttonDisabledBackgroundColor, @buttonDisabledBackgroundColor);
+    cursor: not-allowed;
+  }
+
+  // Clear styling
+  &.btn-clear {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 0;
+  }
+
+  // Wide button in mobile
+  &.btn-wide-mobile {
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+  }
+}
+
+// Form group
+.form-group {
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  &.form-group-inline {
+    flex-flow: row nowrap;
+  }
+
+  &.form-group-centered {
+    align-items: center;
+  }
+
+  &.form-group-separator {
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    border-top: 1px solid @color8;
+  }
+}
+
+// Form label
+.form-label {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.36em;
+
+  cursor: pointer;
+}
+
+// Form control
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 1em;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: .2em;
+  .appearance(none);
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
