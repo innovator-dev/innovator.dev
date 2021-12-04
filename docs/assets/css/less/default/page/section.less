@@ -4,7 +4,7 @@
  * @link https://innovator.dev
  * @author Eugen Bușoiu
  *
- * Copyright 2021 Innovator Dev. All rights reserved.
+ * Copyright 2021-2022 Innovator Dev. All rights reserved.
  */
 
 section {
@@ -15,9 +15,13 @@ section {
     position: relative;
 
     padding: 0;
-    margin: 4em 0 0;
+    margin: 3em 0 0;
 
     color: @textColorWhite;
+
+    @media (min-width: @mediaQueryMedium) {
+      margin: 4em 0 0;
+    }
 
     h2 {
       font-size: 1.4em;
