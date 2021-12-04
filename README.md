@@ -1,5 +1,5 @@
-![Innovator Dev](https://s3.innovator.dev/app.logo/1/logo-xs.png)
+[![Innovator Dev](https://s3.innovator.dev/app.logo/1/logo-xs.png)][1]
 
-> **Innovator Dev** provides deep product expertise and helps organizations deliver innovative products that generate value.
+> Turn ideas into real business value with **Innovator Dev** and achieve sustainable competitive advantage.
 
-[https://innovator.dev](https://innovator.dev)
+[1]: https://innovator.dev
