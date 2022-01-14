@@ -9,7 +9,7 @@
 
 // Header
 header {
-  padding: 1.5em 0;
+  padding: 2em 0 1em;
 
   @media (min-width: @mediaQueryMedium) {
     padding: 4em 0 3em;
@@ -29,15 +29,19 @@ header {
     // Navigation
     nav {
       .grid;
-      text-align: right;
+      margin: 3em auto 0;
+
+      @media (min-width: @mediaQueryMedium) {
+        text-align: right;
+        margin: 0;
+      }
 
       ul {
-
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
+        display: block;
 
         @media (min-width: @mediaQueryMedium) {
+          display: flex;
+          flex-flow: row nowrap;
           justify-content: flex-end;
         }
 
@@ -57,7 +61,29 @@ header {
             margin-left: 1.1em;
             border-left: 1px dashed @color9;
           }
+
+          a {
+            display: block;
+
+            @media (min-width: @mediaQueryMedium) {
+              display: inline-block;
+            }
+          }
         }
+      }
+    }
+
+    // Logo
+    .logo {
+      margin: 0 auto;
+      .grid(10);
+
+      @media (min-width: @mediaQueryMedium) {
+        .grid(3);
+      }
+
+      img {
+        .grid;
       }
     }
   }
