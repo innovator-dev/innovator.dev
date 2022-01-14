@@ -7,9 +7,19 @@
  * Copyright 2021-2022 Innovator Dev. All rights reserved.
  */
 
-// Primary button
-.btn-1 {
-  .define-button(@buttonDefaultTextColor, @buttonDefaultBackgroundColor, @buttonDefaultBackgroundColor);
+// Header `Let's get in touch` button
+.header-btn-1 {
+  .define-button(@buttonHeaderTextColor, @buttonHeaderBackgroundColor, @buttonHeaderBackgroundHoverColor);
+  box-shadow: 0 0 .15em rgba(0, 0, 0, .25);
+
+  &:hover {
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .35);
+  }
+}
+
+// Header regular button
+.header-btn-2 {
+  .define-bordered-button(@buttonHeader2TextColor, @buttonHeader2BackgroundColor, @buttonHeader2BackgroundHoverColor, @buttonHeader2BorderColor, @buttonHeader2BorderColorHover);
 }
 
 // LinkedIn button

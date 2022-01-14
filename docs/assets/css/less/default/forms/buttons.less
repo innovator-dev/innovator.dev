@@ -8,7 +8,7 @@
  */
 
 // Button structure mixin
-.define-button (@textColor, @backgroundColor, @backgroundColorHover, @bottomBorderWidth: 3px) {
+.define-button (@textColor, @backgroundColor, @backgroundColorHover) {
   background-color: @backgroundColor;
 
   color: @textColor;
@@ -16,6 +16,23 @@
 
   &:hover {
     background-color: @backgroundColorHover;
+
+    color: @textColor;
+    text-decoration: none;
+  }
+}
+
+// Bordered button
+.define-bordered-button (@textColor, @backgroundColor, @backgroundColorHover, @borderColor, @borderColorHover, @borderWidth: 1px) {
+  background-color: @backgroundColor;
+  border: @borderWidth solid @borderColor;
+
+  color: @textColor;
+  text-decoration: none;
+
+  &:hover {
+    background-color: @backgroundColorHover;
+    border-color: @borderColorHover;
 
     color: @textColor;
     text-decoration: none;

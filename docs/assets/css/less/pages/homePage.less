@@ -8,4 +8,52 @@
  */
 
 .home-page {
+
+  &:before {
+    position: fixed;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    @media (min-width: 320px) {
+      background: url(@cover-sm) no-repeat right center;
+      background-size: cover;
+    }
+
+    @media (min-width: @mediaQueryMedium) {
+      background: url(@cover) no-repeat center center;
+      background-size: cover;
+
+      // iPad
+      @media (-webkit-min-device-pixel-ratio: 2) {
+        background-size: cover;
+      }
+
+      // iPhone X
+      @media (-webkit-device-pixel-ratio: 3) {
+        background-size: auto;
+
+        // iPhone X left/right padding when in landscape
+        @media (orientation: landscape) {
+          padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+      }
+    }
+  }
+
+  // Overlay
+  .overlay {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    flex-grow: 1;
+
+    background: rgba(52, 65, 83, .9);
+    // background: linear-gradient(180deg, rgba(52, 65, 83, 1) 0%, rgba(52, 65, 83, .85) 100%);
+  }
 }

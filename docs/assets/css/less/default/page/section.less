@@ -9,46 +9,54 @@
 
 section {
 
-  // Let's get in touch section
-  &.get-in-touch {
-
+  // Home page section
+  // Motto
+  &.turn-ideas-into-business-value {
     position: relative;
-
-    padding: 0;
-    margin: 3em 0 0;
-
     color: @textColorWhite;
 
-    @media (min-width: @mediaQueryMedium) {
-      margin: 4em 0 0;
+    // Paragraph
+    p.summary {
+      color: @textColorWhite;
+      font-size: 1.35em;
+
+      margin: 1.5em 0;
+      line-height: 1.55em;
+
+      text-align: center;
+
+      strong {
+        font-size: 1.25em;
+        color: @textColorWhite;
+        background-color: @color2;
+        padding: .15em .3em;
+        margin: 0 .1em;
+      }
+
+      @media (min-width: @mediaQueryMedium) {
+        .grid(8);
+        text-align: left;
+      }
+    }
+
+    // Heading
+    /*h1 {
+
     }
 
     h2 {
-      font-size: 1.4em;
-      margin: 0 0 .6em;
+      font-size: 1.2em;
+      margin-bottom: .75em;
+      text-transform: uppercase;
+      color: @color1;
     }
 
-    // Lists
-    ul {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
+    h3 {
+      margin: 1em auto .25em;
 
-      @media (min-width: @mediaQueryMedium) {
-        justify-content: flex-start;
+      &:nth-child(1) {
+        margin: 0 auto .25em;
       }
-
-      li {
-        font-size: 1.1em;
-
-        @media (min-width: @mediaQueryMedium) {
-          margin: 0 0 0 1em;
-
-          &:nth-child(1) {
-            margin: 0;
-          }
-        }
-      }
-    }
+    }*/
   }
 }
