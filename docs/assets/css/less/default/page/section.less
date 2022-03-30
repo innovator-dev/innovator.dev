@@ -28,9 +28,7 @@ section {
       strong {
         font-size: 1.25em;
         color: @textColorWhite;
-        background-color: @color2;
-        padding: .15em .3em;
-        margin: 0 .1em;
+        border-bottom: 4px solid @color2;
       }
 
       @media (min-width: @mediaQueryMedium) {
@@ -58,5 +56,27 @@ section {
         margin: 0 auto .25em;
       }
     }*/
+  }
+
+  // Customer case
+  &.customer-cases {
+
+    // Box
+    .box {
+
+      border-radius: .35em;
+      border: 1px dashed @color2;
+
+      background-color: rgba(0, 0, 0, .1);
+      width: 200px;
+      height: 200px;
+
+      cursor: pointer;
+
+      &:hover{
+        background: rgb(37,46,59);
+        background: linear-gradient(180deg, rgba(37,46,59,1) 13%, rgba(37,46,59,0.828981714756215) 96%);
+      }
+    }
   }
 }
