@@ -85,6 +85,15 @@ header {
       img {
         .grid;
       }
+
+      // Smaller logo
+      &.logo-sm {
+        .grid(8);
+
+        @media (min-width: @mediaQueryMedium) {
+          .grid(2);
+        }
+      }
     }
   }
 }

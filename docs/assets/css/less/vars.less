@@ -44,37 +44,60 @@
 @color9: #777; // Link border color
 @color10: rgba(229, 236, 241, 1); // home page section background color
 
-// Text colors
-@textColor: @color4;
-@textColorHover: darken(@textColor, 10%);
-@textColorWhite: @color5;
+// Colors
+:root {
+  --logo-color: #1dbcf0;
+  --logo-color-secondary: #3c78a2;
 
-// Elements
-@backgroundColor: @color3;
+  --background-color: rgba(248, 248, 248, 1);
+  --text-color: #222;
+  --text-color-white: #fff;
 
-// Buttons
-@buttonDefaultBackgroundColor: @color6;
-@buttonDefaultBackgroundHoverColor: darken(@buttonDefaultBackgroundColor, 7%);
-@buttonDefaultTextColor: @textColorWhite;
+  --anchor-color: #777;
+  --anchor-color-hover: darken(#777, 4%);
 
-@buttonHeaderBackgroundColor: @color6;
-@buttonHeaderBackgroundHoverColor: darken(@buttonHeaderBackgroundColor, 4%);
-@buttonHeaderTextColor: @textColorWhite;
+  --button-default-background-color: #f1f1f1;
+  --button-default-background-color-hover: darken(#f1f1f1, 4%);
+  --button-default-text-color: #222;
 
-@buttonHeader2BackgroundColor: transparent;
-@buttonHeader2BackgroundHoverColor: transparent;
-@buttonHeader2TextColor: @textColorWhite;
-@buttonHeader2BorderColor: transparent;
-@buttonHeader2BorderColorHover: @color6;
+  --button-primary-background-color: rgba(85, 100, 114, 1);
+  --button-primary-background-color-hover: darken(rgba(85, 100, 114, 1), 4%);
+  --button-primary-text-color: #fff;
 
-@buttonDisabledBackgroundColor: @color7;
-@buttonDisabledBackgroundHoverColor: @color7;
-@buttonDisabledTextColor: @textColor;
+  --button-secondary-background-color: transparent;
+  --button-secondary-background-color-hover: transparent;
+  --button-secondary-text-color: #fff;
+  --button-secondary-border-color: transparent;
+  --button-secondary-border-color-hover: rgba(85, 100, 114, 1);
 
-@buttonLinkedInBackgroundColor: #0077b5;
-@buttonLinkedInBackgroundHoverColor: darken(@buttonLinkedInBackgroundColor, 7%);
-@buttonLinkedInTextColor: #fff;
+  --button-disabled-background-color: rgba(85, 100, 114, .4);
+  --button-disabled-background-color-hover: darken(rgba(85, 100, 114, .4), 7%);
+  --button-disabled-text-color: #fff;
 
-@buttonMediumBackgroundColor: #12100e;
-@buttonMediumBackgroundHoverColor: darken(@buttonMediumBackgroundColor, 7%);
-@buttonMediumTextColor: #fff;
+  --separator-line: #ccc;
+
+  --home-page-background-color: rgba(229, 236, 241, 1);
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --black: #000;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}

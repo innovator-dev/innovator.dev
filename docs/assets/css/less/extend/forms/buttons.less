@@ -7,9 +7,14 @@
  * Copyright 2021-2022 Innovator Dev. All rights reserved.
  */
 
+// Default button
+.btn-default {
+  .define-button(--button-default-text-color, --button-default-background-color, --button-default-background-color-hover);
+}
+
 // Header `Let's get in touch` button
 .header-btn-1 {
-  .define-button(@buttonHeaderTextColor, @buttonHeaderBackgroundColor, @buttonHeaderBackgroundHoverColor);
+  .define-button(--button-primary-text-color, --button-primary-background-color, --button-primary-background-color-hover);
   box-shadow: 0 0 .15em rgba(0, 0, 0, .25);
 
   &:hover {
@@ -19,15 +24,5 @@
 
 // Header regular button
 .header-btn-2 {
-  .define-bordered-button(@buttonHeader2TextColor, @buttonHeader2BackgroundColor, @buttonHeader2BackgroundHoverColor, @buttonHeader2BorderColor, @buttonHeader2BorderColorHover);
-}
-
-// LinkedIn button
-.btn-linkedin {
-  .define-button(@buttonLinkedInTextColor, @buttonLinkedInBackgroundColor, @buttonLinkedInBackgroundHoverColor);
-}
-
-// Medium button
-.btn-medium {
-  .define-button(@buttonMediumTextColor, @buttonMediumBackgroundColor, @buttonMediumBackgroundHoverColor);
+  .define-bordered-button(--button-secondary-text-color, --button-secondary-background-color, --button-secondary-background-color-hover, --button-secondary-border-color, --button-secondary-border-color-hover);
 }
