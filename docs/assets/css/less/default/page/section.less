@@ -118,11 +118,11 @@ section {
           }
 
           @media (min-width: @mediaQueryLarge) {
-            height: 250px;
+            height: 275px;
           }
 
           @media (min-width: @mediaQueryExtraLarge) {
-            height: 210px;
+            height: 225px;
           }
 
           // Box heading
@@ -194,7 +194,7 @@ section {
     background-color: var(--light);
     box-shadow: 0 0 .5em rgba(0, 0, 0, .25);
 
-    @media (min-width: @mediaQueryMedium) {
+    @media (min-width: @mediaQueryLarge) {
       .grid(11);
     }
 
@@ -223,7 +223,11 @@ section {
 
     // Product story
     .product-story {
-      padding: 2em 2.5em 3em;
+      padding: 2em 2em 3em;
+
+      @media (min-width: @mediaQueryMedium) {
+        padding: 2em 2.5em 3em;
+      }
 
       & > h1 {
         position: relative;
