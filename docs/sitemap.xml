@@ -10,18 +10,28 @@
     <url>
         <loc>https://innovator.dev/work/</loc>
         <changefreq>monthly</changefreq>
+        <lastmod>2022-05-04</lastmod>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://innovator.dev/work/trading-platform-virtual-currency</loc>
+        <loc>https://innovator.dev/work/fundraising-donation-web-app-nonprofit/</loc>
         <changefreq>monthly</changefreq>
+        <lastmod>2022-05-04</lastmod>
         <priority>0.5</priority>
     </url>
 
     <url>
-        <loc>https://innovator.dev/work/management-platform-tenants-associations</loc>
+        <loc>https://innovator.dev/work/trading-platform-virtual-currency/</loc>
         <changefreq>monthly</changefreq>
+        <lastmod>2022-04-10</lastmod>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://innovator.dev/work/management-platform-tenants-associations/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2022-04-10</lastmod>
         <priority>0.5</priority>
     </url>
 
