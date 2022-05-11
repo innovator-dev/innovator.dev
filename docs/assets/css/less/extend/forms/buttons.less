@@ -1,9 +1,7 @@
 /*
- * Innovator Dev, passion for innovation
+ * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * @author Eugen Bușoiu
- *
  * Copyright 2021-2022 Innovator Dev. All rights reserved.
  */
 
@@ -25,4 +23,14 @@
 // Header regular button
 .header-btn-2 {
   .define-bordered-button(--button-secondary-text-color, --button-secondary-background-color, --button-secondary-background-color-hover, --button-secondary-border-color, --button-secondary-border-color-hover);
+}
+
+// WhatsApp button
+.btn-whatsapp {
+  .define-button(--button-default-text-color, --whatsapp-background-color, --whatsapp-background-color-hover);
+  box-shadow: 0 0 .15em rgba(0, 0, 0, .25);
+
+  &:hover {
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .35);
+  }
 }
