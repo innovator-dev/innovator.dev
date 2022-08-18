@@ -8,30 +8,44 @@
     </url>
 
     <url>
+        <loc>https://innovator.dev/products/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2022-08-18</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://innovator.dev/work/opendata-portal/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2022-08-18</lastmod>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
         <loc>https://innovator.dev/work/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-05-04</lastmod>
+        <lastmod>2022-08-18</lastmod>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://innovator.dev/work/fundraising-donation-web-app-nonprofit/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-05-09</lastmod>
+        <lastmod>2022-08-18</lastmod>
         <priority>0.5</priority>
     </url>
 
     <url>
         <loc>https://innovator.dev/work/trading-platform-virtual-currency/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-05-09</lastmod>
+        <lastmod>2022-08-18</lastmod>
         <priority>0.5</priority>
     </url>
 
     <url>
         <loc>https://innovator.dev/work/management-platform-tenants-associations/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-05-11</lastmod>
+        <lastmod>2022-08-18</lastmod>
         <priority>0.5</priority>
     </url>
 
