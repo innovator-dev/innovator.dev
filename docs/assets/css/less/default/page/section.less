@@ -17,7 +17,7 @@ section {
       color: var(--text-color-white);
       font-size: 1.35em;
 
-      margin: 1em 0 2em;
+      margin: 0 0 2em;
       line-height: 1.55em;
 
       text-align: center;
@@ -103,7 +103,7 @@ section {
           flex-flow: column nowrap;
           align-items: flex-start;
 
-          .grid(11);
+          .grid;
 
           border-radius: .35em;
           background-color: var(--light);
@@ -276,6 +276,41 @@ section {
           &::marker {
             color: var(--logo-color);
             font-size: .9em;
+          }
+        }
+      }
+
+      // Navigation
+      & > nav {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+
+        margin: 2em auto 0;
+
+        @media (min-width: 424px) {
+          justify-content: space-evenly;
+          align-items: center;
+        }
+
+        input[type=submit], input[type=button], input[type=reset], button, a.btn {
+          margin: 1em 0 0;
+
+          &:first-child {
+            margin: 0;
+          }
+        }
+
+        @media (min-width: @mediaQuerySmall) {
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+
+          input[type=submit], input[type=button], input[type=reset], button, a.btn {
+            margin: 0 0 0 1em;
+
+            &:first-child {
+              margin: 0;
+            }
           }
         }
       }
