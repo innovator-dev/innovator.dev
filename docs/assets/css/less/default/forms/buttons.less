@@ -2,7 +2,7 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2022 Innovator Dev. All rights reserved.
+ * Copyright 2021-2023 Innovator Dev. All rights reserved.
  */
 
 // Button structure mixin
@@ -22,8 +22,8 @@
 
 // Bordered button
 .define-bordered-button (@textColor, @backgroundColor, @backgroundColorHover, @borderColor, @borderColorHover, @borderWidth: 1px) {
-  background-color: var(@backgroundColor);
-  border: var(@borderWidth) solid var(@borderColor);
+  background-color: @backgroundColor;
+  border: @borderWidth solid var(@borderColor);
 
   color: var(@textColor);
   text-decoration: none;

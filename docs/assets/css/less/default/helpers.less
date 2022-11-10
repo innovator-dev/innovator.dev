@@ -2,5 +2,51 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2022 Innovator Dev. All rights reserved.
+ * Copyright 2021-2023 Innovator Dev. All rights reserved.
  */
+
+// Navigation
+nav {
+
+  // Buttons navigation
+  &.nav-buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 2em auto 1em;
+
+    @media (min-width: 424px) {
+      justify-content: space-around;
+    }
+
+    @media (min-width: @mediaQueryMedium) {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    input[type=submit], input[type=button], input[type=reset], button, a.btn {
+      .grid;
+      margin: 1em auto 0;
+
+      @media (min-width: @mediaQueryMedium) {
+        width: auto;
+        margin: 0 0 0 1em;
+      }
+
+      &:first-child {
+        margin: 0;
+      }
+
+      // Move to right
+      &.ml {
+        margin-left: auto;
+      }
+
+      &.mr {
+        margin-right: auto;
+      }
+    }
+  }
+}

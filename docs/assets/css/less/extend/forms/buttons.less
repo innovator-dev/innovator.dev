@@ -2,7 +2,7 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2022 Innovator Dev. All rights reserved.
+ * Copyright 2021-2023 Innovator Dev. All rights reserved.
  */
 
 // Default button
@@ -13,34 +13,21 @@
 // Primary button
 .btn-primary {
   .define-button(--button-primary-text-color, --button-primary-background-color, --button-primary-background-color-hover);
-  box-shadow: 0 0 .15em rgba(0, 0, 0, .25);
-
-  &:hover {
-    box-shadow: 0 0 .25em rgba(0, 0, 0, .35);
-  }
 }
 
-// Header `Let's get in touch` button
+.btn-primary-bordered {
+  .define-bordered-button(--button-primary-text-color-bordered, transparent, transparent, --button-primary-background-color, --button-primary-background-color-hover, 1px);
+}
+
 .btn-secondary {
   .define-button(--button-secondary-text-color, --button-secondary-background-color, --button-secondary-background-color-hover);
-  box-shadow: 0 0 .15em rgba(0, 0, 0, .25);
-
-  &:hover {
-    box-shadow: 0 0 .25em rgba(0, 0, 0, .35);
-  }
 }
 
-// Header regular button
-.btn-transparent {
-  .define-bordered-button(--button-transparent-text-color, --button-transparent-background-color, --button-transparent-background-color-hover, --button-transparent-border-color, --button-transparent-border-color-hover);
+.btn-secondary-bordered {
+  .define-bordered-button(--button-secondary-text-color-bordered, transparent, transparent, --button-secondary-background-color, --button-secondary-background-color-hover, 1px);
 }
 
 // WhatsApp button
 .btn-whatsapp {
   .define-button(--button-primary-text-color, --whatsapp-background-color, --whatsapp-background-color-hover);
-  box-shadow: 0 0 .15em rgba(0, 0, 0, .25);
-
-  &:hover {
-    box-shadow: 0 0 .25em rgba(0, 0, 0, .35);
-  }
 }
