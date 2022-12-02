@@ -7,5 +7,41 @@
 
 .about-page {
 
+  // Paragraphs
+  p {
+    color: var(--text-color-white);
+    font-size: 1.4em;
 
+    margin: 0 0 3em;
+    line-height: 1.55em;
+    text-align: center;
+
+    strong {
+      position: relative;
+      font-size: 1.25em;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        border-bottom: 8px solid var(--dark);
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: @mediaQueryMedium) {
+      text-align: left;
+    }
+
+    @media (min-width: @mediaQueryLarge) {
+      .grid(10);
+    }
+
+    @media (min-width: @mediaQueryExtraLarge) {
+      .grid(8);
+    }
+  }
 }
