@@ -51,33 +51,6 @@ main {
       }
     }
 
-    // Paragraph
-    & > p {
-      color: var(--text-color-white);
-      line-height: 1.75em;
-      margin: 0 auto 1.35em;
-
-      &:nth-of-type(:last-child) {
-        margin: 0 auto;
-      }
-
-      & > strong {
-        position: relative;
-        font-size: 1.15em;
-
-        &:before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-
-          width: 100%;
-          border-bottom: 8px solid var(--dark);
-          z-index: -1;
-        }
-      }
-    }
-
     // Lists
     & > ul {
       margin: .5em 1.4em 1em;
