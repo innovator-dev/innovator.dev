@@ -19,7 +19,6 @@ section {
 
       margin: 0 0 2em;
       line-height: 1.55em;
-
       text-align: center;
 
       strong {
@@ -43,6 +42,10 @@ section {
       }
 
       @media (min-width: @mediaQueryLarge) {
+        .grid(10);
+      }
+
+      @media (min-width: @mediaQueryExtraLarge) {
         .grid(8);
       }
     }
@@ -56,35 +59,12 @@ section {
       margin: 0 auto;
     }
 
-    // Handling heading, level 2
-    h2 {
-      position: relative;
-      display: table;
-      text-transform: uppercase;
-      color: var(--light);
-      font-size: 1.25em;
-      margin: 0 auto 1.25em;
-
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        width: 100%;
-        border-bottom: 8px solid var(--dark);
-        z-index: -1;
-      }
-
-      @media (min-width: @mediaQueryMedium) {
-        display: inline-block;
-      }
-    }
-
+    // Lists
     ul {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
+      margin: 0 auto;
 
       @media (min-width: @mediaQueryMedium) {
         flex-flow: row wrap;
@@ -118,17 +98,17 @@ section {
 
           @media (min-width: @mediaQueryMedium) {
             width: 48%;
-            height: 320px;
+            height: 330px;
           }
 
           @media (min-width: @mediaQueryLarge) {
-            width: 40%;
-            height: 270px;
+            width: 45%;
+            height: 310px;
           }
 
           @media (min-width: @mediaQueryExtraLarge) {
-            width: 40%;
-            height: 240px;
+            width: 42%;
+            height: 260px;
           }
 
           // Box heading
@@ -143,6 +123,7 @@ section {
           p {
             flex-grow: 1;
             font-size: .9em;
+            color: var(--text-color);
 
             span {
               &.customer-req {

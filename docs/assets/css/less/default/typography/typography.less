@@ -81,7 +81,22 @@ a {
       color: var(--anchor-color-hover);
       outline: 0;
 
-      border-bottom: 2px solid var(--button-background-color-primary);
+      border-bottom: 2px solid var(--logo-color);
+    }
+  }
+
+  // Light anchor
+  &.white {
+    color: var(--text-color-white);
+
+    &:hover {
+      color: var(--text-color-white);
+    }
+
+    &:not(.btn):not(.na) {
+      &:hover {
+        color: var(--text-color-white);
+      }
     }
   }
 }

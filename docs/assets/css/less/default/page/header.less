@@ -16,7 +16,7 @@ header {
   // Container
   .container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
 
     @media (min-width: @mediaQuerySmall) {
@@ -26,10 +26,11 @@ header {
 
     // Navigation
     nav {
-      .grid;
-      margin: 3em auto 0;
+      display: none;
 
       @media (min-width: @mediaQueryMedium) {
+        display: block;
+        .grid;
         text-align: right;
         margin: 0;
       }
@@ -49,7 +50,7 @@ header {
           min-width: 40%;
 
           @media (min-width: @mediaQueryMedium) {
-            margin: 0 0 0 1em;
+            margin: 0 0 0 1.5em;
             min-width: auto;
 
             &:nth-child(1) {
@@ -58,9 +59,9 @@ header {
           }
 
           &.separator {
-            padding-left: 1.1em;
-            margin-left: 1.1em;
-            border-left: 1px dashed var(--separator-line);
+            padding-left: 1.5em;
+            margin-left: 1.5em;
+            border-left: 1px dotted var(--separator-line);
           }
 
           a {
@@ -74,6 +75,37 @@ header {
       }
     }
 
+    // Slide menu button
+    .btn-menu {
+      display: inline-block;
+
+      font-size: 2em;
+      border-radius: 0;
+      padding: .75em .5em;
+      background-color: transparent;
+      color: var(--text-color-white);
+
+      @media (min-width: @mediaQueryMedium) {
+        display: none;
+      }
+    }
+
+    // Slide menu
+    .slide-menu {
+      display: none;
+
+      @media (min-width: @mediaQueryMedium) {
+        display: inline-block;
+      }
+
+      // Slide menu close button
+      .btn-slide-close {
+        @media (min-width: @mediaQueryMedium) {
+          display: none;
+        }
+      }
+    }
+
     // Logo
     .logo {
       margin: 0 auto;
@@ -81,6 +113,10 @@ header {
 
       @media (min-width: @mediaQueryMedium) {
         .grid(3);
+      }
+
+      &.logo-slide-menu {
+        z-index: 2;
       }
 
       img {
