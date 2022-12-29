@@ -20,6 +20,11 @@ main {
       font-size: 1.8em;
       margin: 0 auto .75em;
       letter-spacing: -.5px;
+      text-align: center;
+
+      @media (min-width: @mediaQueryMedium) {
+        text-align: left;
+      }
 
       & > span {
         text-decoration: underline;
