@@ -25,12 +25,15 @@
 @mediaQueryExtraLarge4x: 1900px;
 
 // Cover
-@theCover: "app.cover/221202/cover";
+@theCover: "app.cover/230215/cover";
 @cover: "@{S3}@{theCover}.jpg";
 @cover-sm: "@{S3}@{theCover}-sm.jpg";
 
 // Colors
 :root {
+  --background-image: url(@cover);
+  --background-image-sm: url(@cover-sm);
+
   --logo-color: #1dbcf0;
   --logo-color-secondary: #3c78a2;
 

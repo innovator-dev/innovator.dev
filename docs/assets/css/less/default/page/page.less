@@ -25,12 +25,12 @@
     z-index: -1;
 
     @media (min-width: 320px) {
-      background: url(@cover-sm) no-repeat right center;
+      background: var(--background-image-sm) no-repeat right center;
       background-size: cover;
     }
 
     @media (min-width: @mediaQueryMedium) {
-      background: url(@cover) no-repeat center center;
+      background: var(--background-image) no-repeat center center;
       background-size: cover;
 
       // iPad
@@ -59,7 +59,7 @@
     flex-grow: 1;
 
     background: rgb(52, 65, 83);
-    background: linear-gradient(145deg, rgba(52, 65, 83, 1) 0%, rgba(52, 65, 83, .75) 100%);
+    background: linear-gradient(145deg, rgba(52, 65, 83, 1) 0%, rgba(52, 65, 83, .25) 100%);
   }
 
   // Header
