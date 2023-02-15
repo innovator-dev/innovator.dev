@@ -294,9 +294,6 @@ const app = (() => {
         let slideMenuTrigger = document.querySelector('.btn-menu'),
             slideMenu = document.querySelector('.slide-menu');
 
-        console.log(slideMenu);
-        console.log(slideMenuTrigger);
-
         if (slideMenuTrigger !== null && slideMenu !== null) {
             slideMenuTrigger.addEventListener('click', (e) => {
                 e.preventDefault();
