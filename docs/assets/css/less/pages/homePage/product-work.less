@@ -1,0 +1,104 @@
+/*
+ * Innovator Dev - Passion for technology
+ *
+ * @link https://innovator.dev
+ * Copyright 2021-2023 Innovator Dev. All rights reserved.
+ */
+
+// Product work
+.product-work {
+  .grid;
+  color: var(--text-color-white);
+
+  // Product cover
+  .product-cover {
+    background-image: var(--product-image);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .grid;
+    margin: 2em auto 1em;
+    height: 300px;
+
+    @media (min-width: @mediaQuerySmall) {
+      height: 280px;
+    }
+
+    @media (min-width: @mediaQueryLarge) {
+      .grid;
+      height: 400px;
+    }
+
+    @media (min-width: @mediaQueryExtraLarge) {
+      height: 500px;
+    }
+  }
+
+  // Product story
+  .product-story {
+    h2 {
+      display: inline-block;
+      margin: 1.25em auto .5em;
+
+      @media (min-width: @mediaQueryMedium) {
+        display: inline-block;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 1em;
+      margin: 2em auto .75em;
+    }
+
+    p {
+      margin: 0 auto 1.25em;
+
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
+
+    ul {
+      margin: .5em 1.5em 2em;
+      list-style: disc;
+
+      li {
+        line-height: 2em;
+
+        &::marker {
+          color: var(--logo-color);
+        }
+      }
+    }
+  }
+}
+
+// Product customer feedback
+.product-customer-feedback {
+  margin: 3em auto 0;
+  background-color: var(--customers-section-background-color);
+  color: var(--text-color);
+  padding: 2.5em 0;
+
+  // Container
+  .container {
+
+    // Heading
+    h2 {
+      color: var(--text-color);
+
+      &:before {
+        border-bottom: 4px solid var(--customers-section-heading-border-color);
+        z-index: 0;
+      }
+    }
+
+    // Paragraph
+    p {
+      font-style: italic;
+      font-size: 1.1em;
+    }
+  }
+}

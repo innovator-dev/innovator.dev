@@ -25,7 +25,8 @@
     z-index: -1;
 
     @media (min-width: 320px) {
-      background: var(--background-image-sm) no-repeat right center;
+      background: var(--background-image) no-repeat right center;
+      // background: var(--background-image-sm) no-repeat right center;
       background-size: cover;
     }
 
@@ -58,8 +59,12 @@
 
     flex-grow: 1;
 
-    background: rgb(52, 65, 83);
-    background: linear-gradient(145deg, rgba(52, 65, 83, 1) 0%, rgba(52, 65, 83, .25) 100%);
+    background: rgb(23, 45, 60);
+    background: linear-gradient(0deg, rgba(23, 45, 60, .85) 55%, rgba(23, 45, 60, .45) 100%);
+
+    @media (min-width: @mediaQueryMedium) {
+      background: linear-gradient(0deg, rgba(23, 45, 60, .95) 25%, rgba(43, 99, 138, .55) 100%);
+    }
   }
 
   // Header

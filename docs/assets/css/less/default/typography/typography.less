@@ -49,7 +49,7 @@ html {
 body {
   background-color: var(--background-color);
 
-  font: 400 16px/1.6 'Muli Light', Tahoma, Arial, sans-serif;
+  font: 300 16px/1.7 'Rubik', Tahoma, Arial, sans-serif;
   color: var(--text-color);
   text-rendering: optimizeLegibility;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .01);
@@ -103,14 +103,25 @@ a {
 
 h1, h2, h3, h4,
 input, button, label, textarea {
-  font-family: 'Muli Light', Georgia, Arial, sans-serif;
+  font-family: 'Rubik', Georgia, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
+}
+
+h1, h2, h3, h4 {
+  position: relative;
+  text-align: center;
+  line-height: 1.25;
+
+  @media (min-width: @mediaQueryMedium) {
+    text-align: left;
+  }
 }
 
 // Headings
 h1 {
   font-size: 1.64em;
+  letter-spacing: -.5px;
 }
 
 h2 {
@@ -123,6 +134,10 @@ h3 {
 
 h4 {
   font-size: 1.06em;
+}
+
+strong {
+  font-weight: 500;
 }
 
 p {
@@ -147,7 +162,7 @@ picture {
 }
 
 input, button, label, textarea {
-  font-family: 'Muli Light', Arial, sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   font-weight: 400;
   margin: 0;
 }

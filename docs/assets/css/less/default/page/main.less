@@ -9,56 +9,85 @@
 main {
   flex-grow: 1;
   padding: 1em 0;
+  color: var(--text-color-white);
   .grid;
 
   // Container
   .container {
 
-    // Heading
-    & > h1 {
-      color: var(--text-color-white);
-      font-size: 1.8em;
+    // Level 1 heading
+    h1 {
+      display: table;
+      font-size: 2em;
+      font-weight: 300;
+      line-height: 1.35em;
       margin: 0 auto .75em;
-      letter-spacing: -.5px;
-      text-align: center;
 
       @media (min-width: @mediaQueryMedium) {
-        text-align: left;
+        display: block;
       }
 
-      & > span {
-        text-decoration: underline;
+      // Labeled heading
+      &.labeled {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          top: -26px;
+          left: 0;
+
+          .grid;
+          content: attr(data-label);
+          font-size: .3em;
+          text-transform: uppercase;
+          line-height: 1.2em;
+          letter-spacing: 1px;
+          background: var(--logo-color-secondary);
+          padding: .6em .8em;
+          border-radius: .25em;
+
+          @media (min-width: @mediaQueryMedium) {
+            width: auto;
+          }
+        }
       }
     }
 
     // Level 2 heading
-    & > h2 {
+    h2 {
       position: relative;
       display: table;
-      text-transform: uppercase;
-      color: var(--light);
-      font-size: 1.25em;
-      margin: .5em auto 1.25em;
+      font-size: 1.3em;
+      margin: .5em auto .75em;
+      // text-transform: uppercase;
 
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        width: 100%;
-        border-bottom: 8px solid var(--dark);
-        z-index: -1;
+      &:nth-of-type(1) {
+        margin: 0 auto 1em;
       }
 
       @media (min-width: @mediaQueryMedium) {
         display: inline-block;
       }
+
+      &[data-icon] {
+        &:before {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: .5em;
+          font-size: .85em;
+        }
+      }
+    }
+
+    // Paragraphs
+    p {
+      // margin: 0 auto 1.25em;
+      line-height: 1.8em;
     }
 
     // Lists
     & > ul {
-      margin: .5em 1.4em 1em;
+      margin: 0 1.5em;
       list-style: disc;
 
       li {

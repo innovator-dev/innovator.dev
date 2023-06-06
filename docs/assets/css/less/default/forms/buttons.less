@@ -36,3 +36,26 @@
     text-decoration: none;
   }
 }
+
+// Active state bordered button
+.define-bordered-button-active (@textColor, @backgroundColor, @backgroundColorHover, @backgroundColorActive, @borderColor, @borderColorHover, @borderWidth: 1px) {
+  background-color: @backgroundColor;
+  border: @borderWidth solid var(@borderColor);
+
+  color: var(@textColor);
+  text-decoration: none;
+
+  &:hover,
+  &.btn-active {
+    background-color: var(@backgroundColorHover);
+    border-color: var(@borderColorHover);
+
+    color: var(@textColor);
+    text-decoration: none;
+  }
+
+  &.btn-active {
+    background-color: var(@backgroundColorActive);
+    border-color: transparent;
+  }
+}

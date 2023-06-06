@@ -28,7 +28,7 @@
   top: 0;
   left: 0;
 
-  .grid;
+  .grid(11);
   height: 100%;
 
   -webkit-transition: width 1s ease; //add this line(Safari)
@@ -64,8 +64,9 @@
         color: var(--text-color-white);
         text-align: left;
 
-        &:not(.btn):not(.na) {
+        &:not(.btn-whatsapp):not(.btn-secondary) {
           border: none;
+          color: var(--text-color);
         }
       }
     }
@@ -80,6 +81,6 @@
     padding: .15em .5em;
     margin: 0 0 1em;
 
-    color: var(--text-color-white);
+    color: var(--text-color);
   }
 }

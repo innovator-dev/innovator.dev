@@ -25,7 +25,7 @@
 @mediaQueryExtraLarge4x: 1900px;
 
 // Cover
-@theCover: "app.cover/230215/cover";
+@theCover: "app.cover/230604/cover";
 @cover: "@{S3}@{theCover}.jpg";
 @cover-sm: "@{S3}@{theCover}-sm.jpg";
 
@@ -36,25 +36,27 @@
 
   --logo-color: #1dbcf0;
   --logo-color-secondary: #3c78a2;
+  --logo-color-tertiary: #12212b;
 
   --background-color: rgba(248, 248, 248, 1);
   --text-color: #222;
   --text-color-white: #fff;
+  --text-color-highlight: #3c78a2;
 
   --anchor-color: #777;
   --anchor-color-hover: darken(#777, 4%);
 
   --button-default-background-color: #f1f1f1;
-  --button-default-background-color-hover: darken(#f1f1f1, 5%);
+  --button-default-background-color-hover: darken(#f1f1f1, 2%);
   --button-default-text-color: #222;
 
   --button-primary-background-color: #5f9ae2;
-  --button-primary-background-color-hover: darken(#5f9ae2, 5%);
+  --button-primary-background-color-hover: darken(#5f9ae2, 4%);
   --button-primary-text-color: #fff;
   --button-primary-text-color-bordered: #222;
 
   --button-secondary-background-color: #2963a8;
-  --button-secondary-background-color-hover: darken(#2963a8, 5%);
+  --button-secondary-background-color-hover: darken(#2963a8, 4%);
   --button-secondary-text-color: #fff;
   --button-secondary-text-color-bordered: #222;
 
@@ -68,6 +70,13 @@
   --button-disabled-background-color-hover: darken(rgba(85, 100, 114, .3), 7%);
   --button-disabled-text-color: #fff;
 
+  --button-header-nav-background-color: transparent;
+  --button-header-nav-background-color-hover: darken(#5f9ae2, 4%);
+  --button-header-nav-background-color-active: darken(#5f9ae2, 4%);
+  --button-header-nav-text-color: #fff;
+  --button-header-nav-border-color: transparent;
+  --button-header-nav-border-color-hover: #3c78a2;
+
   --separator-line: #777;
 
   --home-page-background-color: rgba(229, 236, 241, 1);
@@ -75,7 +84,13 @@
   --whatsapp-background-color: #25d366;
   --whatsapp-background-color-hover: darken(#25d366, 4%);
 
-  --color-slide-menu-background-color: rgba(0, 0, 0, .95);
+  --color-slide-menu-background-color: #f1f1f1;
+
+  --product-image-background-color: #fff;
+  --product-image-border-color: #3c78a2;
+
+  --customers-section-background-color: #f1f1f1;
+  --customers-section-heading-border-color: #3c78a2;
 
   --blue: #007bff;
   --indigo: #6610f2;
