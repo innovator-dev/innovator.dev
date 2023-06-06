@@ -87,8 +87,11 @@ main {
 
     // Lists
     & > ul {
-      margin: 0 1.5em;
       list-style: disc;
+
+      @media (min-width: @mediaQueryMedium) {
+        margin: 0 1.5em;
+      }
 
       li {
         color: var(--text-color-white);
