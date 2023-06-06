@@ -1,59 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
     <url>
         <loc>https://innovator.dev/</loc>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
-
-    <url>
-        <loc>https://innovator.dev/story/</loc>
-        <changefreq>monthly</changefreq>
-        <lastmod>2022-12-29</lastmod>
-        <priority>0.5</priority>
-    </url>
-
     <url>
         <loc>https://innovator.dev/products/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-12-02</lastmod>
+        <lastmod>2023-06-06</lastmod>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://innovator.dev/work/opendata-portal/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-12-02</lastmod>
+        <lastmod>2023-06-06</lastmod>
         <priority>0.5</priority>
     </url>
-
     <url>
         <loc>https://innovator.dev/work/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-12-02</lastmod>
+        <lastmod>2023-06-06</lastmod>
         <priority>0.7</priority>
     </url>
-
-    <url>
-        <loc>https://innovator.dev/work/fundraising-donation-web-app-nonprofit/</loc>
-        <changefreq>monthly</changefreq>
-        <lastmod>2022-12-02</lastmod>
-        <priority>0.5</priority>
-    </url>
-
     <url>
         <loc>https://innovator.dev/work/trading-platform-virtual-currency/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-12-02</lastmod>
+        <lastmod>2023-06-06</lastmod>
         <priority>0.5</priority>
     </url>
-
     <url>
         <loc>https://innovator.dev/work/management-platform-tenants-associations/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2022-12-02</lastmod>
+        <lastmod>2023-06-06</lastmod>
         <priority>0.5</priority>
     </url>
-
+    <url>
+        <loc>https://innovator.dev/work/fundraising-donation-web-app-nonprofit/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2023-06-06</lastmod>
+        <priority>0.5</priority>
+    </url>
 </urlset>
