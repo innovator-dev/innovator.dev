@@ -13,15 +13,16 @@
   // Product cover
   .product-cover {
     background-image: var(--product-image);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     .grid;
     margin: 2em auto 1em;
-    height: 300px;
+    height: 340px;
 
     @media (min-width: @mediaQuerySmall) {
+      background-size: contain;
       height: 280px;
     }
 
