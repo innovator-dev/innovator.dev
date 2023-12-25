@@ -86,4 +86,31 @@ section {
   &.cols-5-7 {
     .cols(5, 7);
   }
+
+  // Reverse columns
+  &.cols-reverse {
+    flex-flow: column-reverse nowrap;
+
+    @media (min-width: @mediaQueryLarge) {
+      flex-flow: row nowrap;
+      height: 100%;
+    }
+
+    & > div {
+      position: relative;
+
+      // Bottom div
+      &:nth-child(1) {
+        margin: 3em 0 0;
+
+        @media (min-width: @mediaQueryLarge) {
+          margin: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
+  }
 }
