@@ -31,6 +31,24 @@ nav {
       margin: 0 auto;
     }
 
+    &.nav-keep-width {
+      flex-flow: row wrap;
+      justify-content: center;
+
+      input[type=submit], input[type=button], input[type=reset], button, a.btn {
+        width: auto;
+        margin: 0 0 0 1.25em;
+
+        &:nth-child(1) {
+          margin: 0;
+        }
+      }
+
+      @media (min-width: @mediaQueryMedium) {
+        justify-content: flex-start;
+      }
+    }
+
     input[type=submit], input[type=button], input[type=reset], button, a.btn {
       .grid;
       margin: 1em auto 0;

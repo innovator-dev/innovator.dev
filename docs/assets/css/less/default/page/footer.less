@@ -7,8 +7,10 @@
 
 // Footer
 footer {
-  padding: 3em 0 1em;
-  margin: 1em auto;
+  .grid;
+  padding: 2em 0;
+  margin: 0 auto;
+  background-color: var(--footer-background-color);
   color: var(--text-color-white);
   font-size: 1em;
   text-align: center;
@@ -18,7 +20,47 @@ footer {
   }
 
   // Copyright paragraph
-  p:nth-child(2) {
-    font-size: .8em;
+  // Passion for technology
+  .passion-for-tech {
+    @media (min-width: @mediaQueryMedium) {
+      text-align: right;
+    }
+
+    p:nth-child(2) {
+      font-size: .8em;
+    }
+  }
+
+  // Contact details
+  .get-in-touch {
+    & > ul {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+
+      & > li {
+        .grid(6);
+        margin-left: 1.25em;
+        font-size: .8em;
+
+        @media (min-width: @mediaQueryMedium) {
+          .grid(3.75);
+        }
+
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+
+        & > strong {
+          display: block;
+          text-transform: uppercase;
+          margin: 0 0 .25em;
+        }
+
+        & > span {
+          display: block;
+        }
+      }
+    }
   }
 }

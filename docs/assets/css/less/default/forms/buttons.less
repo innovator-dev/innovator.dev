@@ -39,7 +39,7 @@
 
 // Active state bordered button
 .define-bordered-button-active (@textColor, @backgroundColor, @backgroundColorHover, @backgroundColorActive, @borderColor, @borderColorHover, @borderWidth: 1px) {
-  background-color: @backgroundColor;
+  background-color: var(@backgroundColor);
   border: @borderWidth solid var(@borderColor);
 
   color: var(@textColor);
