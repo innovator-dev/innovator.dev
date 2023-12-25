@@ -8,37 +8,37 @@
     <url>
         <loc>https://innovator.dev/products/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2023-06-06</lastmod>
-        <priority>0.7</priority>
+        <lastmod>2023-12-25</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://innovator.dev/work/opendata-portal/</loc>
+        <loc>https://innovator.dev/products/opendata-portal/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2023-06-06</lastmod>
-        <priority>0.5</priority>
+        <lastmod>2023-12-25</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://innovator.dev/work/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2023-06-06</lastmod>
-        <priority>0.7</priority>
+        <lastmod>2023-12-25</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://innovator.dev/work/trading-platform-virtual-currency/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2023-06-06</lastmod>
-        <priority>0.5</priority>
+        <lastmod>2023-12-25</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://innovator.dev/work/management-platform-tenants-associations/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2023-06-06</lastmod>
-        <priority>0.5</priority>
+        <lastmod>2023-12-25</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://innovator.dev/work/fundraising-donation-web-app-nonprofit/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2023-06-06</lastmod>
-        <priority>0.5</priority>
+        <lastmod>2023-12-25</lastmod>
+        <priority>0.6</priority>
     </url>
 </urlset>
