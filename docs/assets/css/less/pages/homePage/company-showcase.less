@@ -1,0 +1,49 @@
+/*
+ * Innovator Dev - Passion for technology
+ *
+ * @link https://innovator.dev
+ * Copyright 2021-2023 Innovator Dev. All rights reserved.
+ */
+
+// Company showcase
+.company-showcase {
+  margin: 0 auto 4em;
+
+  // Paragraphs
+  p {
+    font-size: 1.15em;
+    margin: 0 auto 1.25em;
+
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
+
+  // Links
+  a {
+    color: var(--text-color-white);
+  }
+
+  // Product cover
+  .company-showcase-cover {
+    position: relative;
+
+    background-image: var(--product-image);
+    background-image: var(--product-image-set);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .grid;
+    margin: 2em auto 1em;
+    height: 200px;
+    scale: 1.1;
+
+    @media (min-width: @mediaQuerySmall) {
+      background-size: contain;
+      height: 340px;
+
+      scale: 1;
+    }
+  }
+}
