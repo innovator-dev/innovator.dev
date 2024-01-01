@@ -141,18 +141,18 @@
 
           @media (min-width: @mediaQueryMedium) {
             width: 48%;
-            height: 330px;
+            height: 480px;
             margin: 1.5em 0;
           }
 
           @media (min-width: @mediaQueryLarge) {
             width: 45%;
-            height: 310px;
+            height: 460px;
           }
 
           @media (min-width: @mediaQueryExtraLarge) {
             width: 42%;
-            height: 230px;
+            height: 380px;
           }
 
           // Box heading
@@ -168,6 +168,19 @@
             flex-grow: 1;
             color: var(--text-color);
             font-size: .95em;
+          }
+
+          // Product image
+          & > .product-cover {
+            background-image: var(--product-image);
+            background-image: var(--product-image-set);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            .grid;
+            margin: 0 auto 1.5em;
+            height: 150px;
           }
         }
       }
