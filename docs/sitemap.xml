@@ -20,7 +20,13 @@
     <url>
         <loc>https://innovator.dev/work/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2024-01-03</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://innovator.dev/work/civic-involvement-and-innovation-program/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2024-01-03</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
