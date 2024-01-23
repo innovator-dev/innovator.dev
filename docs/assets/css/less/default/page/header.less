@@ -2,7 +2,7 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2023 Innovator Dev. All rights reserved.
+ * Copyright 2021-2024 Innovator Dev. All rights reserved.
  */
 
 // Header
@@ -26,7 +26,7 @@ header {
     }
 
     // Navigation
-    nav {
+    & > nav {
       display: none;
 
       @media (min-width: @mediaQueryMedium) {
@@ -36,7 +36,7 @@ header {
         margin: 0;
       }
 
-      ul {
+      & > ul {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -46,7 +46,7 @@ header {
           justify-content: flex-end;
         }
 
-        li {
+        & > li {
           font-size: 1.1em;
           min-width: 40%;
 
@@ -65,11 +65,22 @@ header {
             border-left: 1px dotted var(--separator-line);
           }
 
-          a {
+          & > a {
             display: block;
 
             @media (min-width: @mediaQueryMedium) {
               display: inline-block;
+            }
+
+            // Selected
+            &.selected {
+              background-color: var(--dropdown-background-color);
+              border-bottom-right-radius: 0;
+              border-bottom-left-radius: 0;
+
+              & > span[data-icon]:before {
+                content: '\e025';
+              }
             }
           }
         }

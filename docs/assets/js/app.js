@@ -2,7 +2,7 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2023 Innovator Dev. All rights reserved.
+ * Copyright 2021-2024 Innovator Dev. All rights reserved.
  */
 
 'use strict';
@@ -295,9 +295,26 @@ const app = (() => {
             slideMenu = document.querySelector('.slide-menu');
 
         if (slideMenuTrigger !== null && slideMenu !== null) {
+
             slideMenuTrigger.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
+
+                // Replace 2nd-level dropdown items
+                let slideMenuDialogs = slideMenu.querySelectorAll('.dialog-action');
+                if (slideMenuDialogs.length) {
+                    slideMenuDialogs.forEach((d) => {
+
+                        // Get dialog ref
+                        let ref = d.getAttribute('data-ref'),
+                            body = document.querySelector(ref);
+
+                        if (ref && body && body.childNodes[0]) {
+                            slideMenu.innerHTML = slideMenu.innerHTML.replace(d.parentNode.outerHTML,
+                                body.childNodes[0].innerHTML);
+                        }
+                    });
+                }
 
                 // Slide dialog
                 const dlg = new Dialog(`<div class="container">${slideMenu.innerHTML}</div>`, {
@@ -338,10 +355,83 @@ const app = (() => {
         }
     }
 
+    /**
+     * Enable dialogs across the app.
+     * @param selector Dialog selector
+     * @param callback (Optional) Callback when opening dialog
+     */
+    function enableDialog(selector, callback = null) {
+
+        // Get dialogs
+        const dialogs = document.querySelectorAll(selector);
+        if (dialogs.length) {
+            dialogs.forEach((d) => {
+
+                // Get dialog ref
+                let ref = d.getAttribute('data-ref'),
+                    body = document.querySelector(ref),
+                    attr = d.getAttribute('data-attr');
+
+                if (ref && body) {
+                    d.addEventListener('click', (e) => {
+
+                        // Prevent default
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        // Close all previous dialogs
+                        if (attr && attr.includes('closeAll')) {
+                            Dialog.closeAll();
+                        }
+
+                        // Keep element selected
+                        d.classList.add('selected');
+
+                        // Create dialog
+                        const dlg = new Dialog(body.innerHTML, {
+                            dialogClassName: (attr && attr.includes('isDropdown') ? 'dialog-dropdown' : 'dialog-shadowed'),
+                            dialogPlaceholderClassName: (attr && attr.includes('isDropdown') ? 'dialog-placeholder' : 'dialog-placeholder-shadowed'),
+                            closeOnEsc: true,
+                            closeOnOutsideClick: true,
+                            linkTo: (attr && attr.includes('linkTo') ? d : null),
+                            callback: {
+                                onClose: () => {
+                                    d.classList.remove('selected');
+                                }
+                            }
+                        });
+
+                        // Callback
+                        if (callback) {
+                            callback(dlg, d.dataset || null);
+                        }
+
+                        // Close button action (if exists)
+                        const closeButton = dlg.dlg.querySelector('.close-dialog');
+                        if (closeButton) {
+                            closeButton.addEventListener('click', (e) => {
+
+                                // Prevent default
+                                e.preventDefault();
+                                e.stopPropagation();
+
+                                // Close dialog
+                                dlg.close();
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    }
+
     return {
 
         // Slide menu
-        slide: enableSlideMenu
+        slide: enableSlideMenu,
+
+        // Dropdown
+        dialog: enableDialog
 
     };
 
@@ -353,5 +443,6 @@ const app = (() => {
 (() => {
 
     app.slide();
+    app.dialog('.dialog-action');
 
 })();

@@ -2,7 +2,7 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2023 Innovator Dev. All rights reserved.
+ * Copyright 2021-2024 Innovator Dev. All rights reserved.
  */
 
 // Main
@@ -12,101 +12,130 @@ main {
   color: var(--text-color-white);
   .grid;
 
-  // Container
-  .container {
+  // Level 1 heading
+  h1 {
+    display: table;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.35em;
+    margin: 0 auto .25em;
 
-    // Level 1 heading
-    h1 {
-      display: table;
-      font-size: 2em;
-      font-weight: 300;
-      line-height: 1.35em;
-      margin: 0 auto .75em;
+    @media (min-width: @mediaQueryMedium) {
+      display: block;
+    }
 
-      @media (min-width: @mediaQueryMedium) {
-        display: block;
+    // Labeled heading
+    &.labeled {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        top: -26px;
+        left: 0;
+
+        .grid;
+        content: attr(data-label);
+        font-size: .3em;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        background: var(--logo-color-secondary);
+        padding: .6em .8em;
+        border-radius: .25em;
+
+        @media (min-width: @mediaQueryMedium) {
+          width: auto;
+        }
       }
+    }
+  }
 
-      // Labeled heading
-      &.labeled {
-        position: relative;
+  // Level 2 heading
+  h2 {
+    position: relative;
+    display: table;
+    font-size: 1.3em;
+    margin: 0 auto .35em;
+    // text-transform: uppercase;
 
-        &:after {
-          position: absolute;
-          top: -26px;
-          left: 0;
+    @media (min-width: @mediaQueryMedium) {
+      display: block;
+    }
 
-          .grid;
-          content: attr(data-label);
-          font-size: .3em;
-          text-transform: uppercase;
-          line-height: 1.2em;
-          letter-spacing: 1px;
-          background: var(--logo-color-secondary);
-          padding: .6em .8em;
-          border-radius: .25em;
+    &[data-icon] {
+      &:before {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .5em;
+        font-size: .85em;
+      }
+    }
 
-          @media (min-width: @mediaQueryMedium) {
-            width: auto;
+    &.display-ib {
+      display: inline-block;
+    }
+
+    &.margin-t-2 {
+      margin-top: 2em;
+    }
+  }
+
+  // Paragraphs
+  p {
+    // margin: 0 auto 1.25em;
+    line-height: 1.8em;
+  }
+
+  // Lists
+  & > ul {
+    list-style: disc;
+
+    @media (min-width: @mediaQueryMedium) {
+      margin: 0 1.5em;
+    }
+
+    li {
+      color: var(--text-color-white);
+      line-height: 1.75em;
+
+      &::marker {
+        color: var(--logo-color);
+        font-size: .9em;
+      }
+    }
+  }
+
+  // Image
+  & > img {
+    display: block;
+  }
+
+  // Blockquote
+  blockquote {
+    display: table;
+    background-color: var(--dropdown-background-color);
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: .35em;
+
+    @media (min-width: @mediaQueryMedium) {
+      display: inline-block;
+    }
+
+    & > ul {
+
+      & > li {
+        text-align: center;
+
+        @media (min-width: @mediaQueryMedium) {
+          display: inline;
+          margin-left: 1.25em;
+
+          &:first-child {
+            margin: 0;
           }
         }
       }
-    }
-
-    // Level 2 heading
-    h2 {
-      position: relative;
-      display: table;
-      font-size: 1.3em;
-      margin: .5em auto .75em;
-      // text-transform: uppercase;
-
-      &:nth-of-type(1) {
-        margin: 0 auto 1em;
-      }
-
-      @media (min-width: @mediaQueryMedium) {
-        display: inline-block;
-      }
-
-      &[data-icon] {
-        &:before {
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: .5em;
-          font-size: .85em;
-        }
-      }
-    }
-
-    // Paragraphs
-    p {
-      // margin: 0 auto 1.25em;
-      line-height: 1.8em;
-    }
-
-    // Lists
-    & > ul {
-      list-style: disc;
-
-      @media (min-width: @mediaQueryMedium) {
-        margin: 0 1.5em;
-      }
-
-      li {
-        color: var(--text-color-white);
-        line-height: 1.75em;
-
-        &::marker {
-          color: var(--logo-color);
-          font-size: .9em;
-        }
-      }
-    }
-
-    // Image
-    & > img {
-      display: block;
     }
   }
 }

@@ -2,7 +2,7 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2023 Innovator Dev. All rights reserved.
+ * Copyright 2021-2024 Innovator Dev. All rights reserved.
  */
 
 // Variables
@@ -14,11 +14,21 @@
 // Extended
 @import "extend/extended";
 
-// Home page
-@import "pages/homePage/innovator-dev-story";
-@import "pages/homePage/product-showcase";
-@import "pages/homePage/product-work";
-@import "pages/homePage/company-showcase";
+// Page types
+// Product work page (used for showcasing individual solution)
+@import "pagetype/product-work";
+
+// Product showcase (used for showcasing multiple solutions)
+@import "pagetype/product-showcase";
+
+// Company showcase (used on top home page)
+@import "pagetype/company-showcase";
+
+// Innovator Dev story (used on bottom home page)
+@import "pagetype/innovator-dev-story";
+
+// Page story (used on pages describing solutions, blog posts)
+@import "pagetype/page-story";
 
 // Other pages
 @import "pages/errorPage/404";

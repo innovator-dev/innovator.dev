@@ -2,18 +2,24 @@
  * Innovator Dev - Passion for technology
  *
  * @link https://innovator.dev
- * Copyright 2021-2023 Innovator Dev. All rights reserved.
+ * Copyright 2021-2024 Innovator Dev. All rights reserved.
  */
+
+// Dialog placeholder
+.dialog-placeholder,
+.slide-menu-dialog-placeholder {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow-y: auto;
+}
 
 // Slide menu dialog placeholder
 .slide-menu-dialog-placeholder {
-  position: fixed;
-  content: '';
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 
   opacity: 1;
   -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
@@ -89,5 +95,75 @@
     margin: 0 0 1em;
 
     color: var(--text-color-white);
+  }
+}
+
+// Shadowed dialog placeholder
+.dialog-placeholder-shadowed {
+  .dialog-placeholder;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+// Dialog
+.dialog-dropdown {
+  position: absolute;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .05);
+  border-bottom-right-radius: .2em;
+  border-bottom-left-radius: .2em;
+  border-top-right-radius: .2em;
+
+  background: var(--dropdown-background-color);
+  font-size: .88em;
+  text-align: left;
+  z-index: 10000;
+
+  & > ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+    & > li {
+      .grid;
+      padding: .2em;
+
+      & > a {
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: .75em .75em;
+        text-align: left;
+
+        &:hover {
+          background-color: var(--dropdown-background-hover-color);
+        }
+      }
+
+      // Separator
+      &.separator {
+        border-top: 1px solid var(--button-primary-separator-color);
+        margin-top: .25em;
+        padding-top: .25em;
+      }
+    }
+  }
+}
+
+// Shadowed dialog
+.dialog-shadowed {
+  position: absolute;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+  border-radius: .35em;
+
+  background: var(--light);
+  padding: 1.75em 2.25em;
+
+  .grid(11);
+
+  @media (min-width: @mediaQueryMedium) {
+    .grid(5);
+  }
+
+  & > h2 {
+    margin: 0 0 1em;
   }
 }
