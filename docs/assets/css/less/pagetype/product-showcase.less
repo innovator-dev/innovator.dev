@@ -7,11 +7,7 @@
 
 // Product showcase
 &.product-showcase {
-  margin: 2em auto 0;
-
-  &:first-child {
-    margin: 0 auto;
-  }
+  margin-bottom: 3em;
 
   // Featured product
   &.featured-product {
@@ -64,7 +60,8 @@
   &.recent-work {
     background-color: var(--customers-section-background-color);
     color: var(--text-color);
-    padding: 2.5em 0;
+    padding: 2em 0;
+    margin: 3em auto 0;
 
     // Container
     .container {
@@ -93,7 +90,7 @@
 
       @media (min-width: @mediaQueryMedium) {
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
       }
 
       & > li {
@@ -111,9 +108,10 @@
 
           border-radius: .35em;
           background-color: var(--light);
-          box-shadow: 0 0 .25em rgba(0, 0, 0, .15);
+          box-shadow: 0 0 .15em rgba(0, 0, 0, .15);
 
           padding: 1.25em;
+          .grid;
 
           @media (min-width: @mediaQueryMedium) {
             width: 48%;
@@ -131,12 +129,36 @@
             height: 380px;
           }
 
+          &.box-sm {
+
+            @media (min-width: @mediaQueryMedium) {
+              width: 48%;
+              height: 300px;
+              margin: 1.5em 0;
+            }
+
+            @media (min-width: @mediaQueryLarge) {
+              width: 45%;
+              height: 275px;
+            }
+
+            @media (min-width: @mediaQueryExtraLarge) {
+              width: 42%;
+              height: 225px;
+            }
+          }
+
           // Box heading
-          h2, h3 {
+          h3 {
             position: relative;
             font-size: 1.15em;
             margin: 0 0 .6em;
             color: var(--logo-color-secondary);
+            .grid;
+
+            @media (min-width: @mediaQueryMedium) {
+              width: auto;
+            }
           }
 
           // Box paragraph
@@ -151,7 +173,7 @@
             background-image: var(--product-image);
             background-image: var(--product-image-set);
             background-size: cover;
-            background-position: center;
+            background-position: center 20%;
             background-repeat: no-repeat;
 
             .grid;

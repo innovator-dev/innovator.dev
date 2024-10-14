@@ -36,7 +36,7 @@
 
   // Focus/Active states
   &:focus, &:active {
-    box-shadow: none;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .35);
     outline: none;
   }
 
@@ -77,6 +77,11 @@
     border: none;
     outline: none;
     border-radius: 0;
+
+    &:focus, &:active {
+      box-shadow: none;
+      outline: none;
+    }
   }
 
   // Wide button in mobile

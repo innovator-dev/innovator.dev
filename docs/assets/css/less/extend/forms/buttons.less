@@ -30,6 +30,11 @@
 // Header nav button
 .btn-header-nav {
   .define-bordered-button-active(--button-header-nav-text-color, --button-header-nav-background-color, --button-header-nav-background-color, --button-header-nav-background-color-active, --button-header-nav-border-color, --button-header-nav-border-color-hover);
+
+  &:focus, &:active {
+    box-shadow: none;
+    outline: none;
+  }
 }
 
 // WhatsApp button

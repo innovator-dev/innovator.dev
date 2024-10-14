@@ -10,11 +10,17 @@
   .grid;
   color: var(--text-color-white);
 
+  margin: 0 auto 3em;
+
+  @media (min-width: @mediaQueryMedium) {
+
+  }
+
   // Product cover
   .product-cover {
     background-image: var(--product-image);
     background-image: var(--product-image-set);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 

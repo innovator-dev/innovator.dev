@@ -8,7 +8,6 @@
 // Main
 main {
   flex-grow: 1;
-  padding: 1em 0 3em;
   color: var(--text-color-white);
   .grid;
 
@@ -18,7 +17,7 @@ main {
     font-size: 2em;
     font-weight: 300;
     line-height: 1.35em;
-    margin: 0 auto .75em;
+    margin: 0 auto .5em;
 
     @media (min-width: @mediaQueryMedium) {
       display: block;
@@ -55,7 +54,7 @@ main {
     position: relative;
     display: table;
     font-size: 1.3em;
-    margin: 0 auto .35em;
+    margin: 0 auto 1em;
     // text-transform: uppercase;
 
     @media (min-width: @mediaQueryMedium) {
@@ -72,7 +71,9 @@ main {
     }
 
     &.display-ib {
-      display: inline-block;
+      @media (min-width: @mediaQueryMedium) {
+        display: inline-block;
+      }
     }
 
     &.margin-t-2 {
