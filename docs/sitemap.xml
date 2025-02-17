@@ -26,13 +26,19 @@
     <url>
         <loc>https://innovator.dev/products/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2024-10-14</lastmod>
+        <lastmod>2025-02-17</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://innovator.dev/products/opendata-portal/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2024-10-14</lastmod>
+        <lastmod>2025-02-17</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://innovator.dev/products/real-time-city-insights/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2025-02-17</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
