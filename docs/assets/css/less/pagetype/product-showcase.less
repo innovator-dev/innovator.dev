@@ -80,6 +80,16 @@
   // Container
   .container {
 
+    // Summary
+    & > p.summary {
+      margin: 0 0 1.75em 0;
+      font-size: 1.1em;
+
+      @media (min-width: @mediaQueryMedium) {
+        .grid(10);
+      }
+    }
+
     // Lists
     & > ul {
       display: flex;
