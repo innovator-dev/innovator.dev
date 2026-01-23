@@ -102,6 +102,18 @@
         justify-content: space-between;
       }
 
+      &.grid-3 {
+        & > li {
+          &.box {
+
+            @media (min-width: @mediaQueryExtraLarge) {
+              width: 32%;
+              height: 380px;
+            }
+          }
+        }
+      }
+
       & > li {
         margin: 0 0 1.5em;
 
