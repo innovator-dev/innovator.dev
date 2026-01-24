@@ -14,13 +14,19 @@
     <url>
         <loc>https://innovator.dev/solutions/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2024-10-14</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://innovator.dev/solutions/ngo/</loc>
         <changefreq>monthly</changefreq>
-        <lastmod>2024-10-31</lastmod>
+        <lastmod>2026-01-24</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://innovator.dev/solutions/smart-city-platforms-dashboards/</loc>
+        <changefreq>monthly</changefreq>
+        <lastmod>2026-01-24</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
