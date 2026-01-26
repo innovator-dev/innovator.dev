@@ -37,12 +37,15 @@
             <h2 class="text-highlight">Business requirements</h2>
             <p>In recent years, women entrepreneurship has become a critical pillar in Romania’s economic transformation. A well-known organization dedicated to increase the importance of the role of women in the development of Romanian society sought to strengthen its digital presence and empower its growing community of women entrepreneurs. The organization needed a modern, secure, and user-friendly platform that could streamline operations, centralize data, and improve member engagement through digital transformation.</p>
             <p>The purpose was clear &dash; create a digital ecosystem where members could connect, enroll, pay their annual membership fee, join exclusive events, and collaborate online — all within a seamless user journey.</p>
-            <h3>Feature highlights</h3>
+            <h2>Technical approach</h2>
             <p>The organization previously managed memberships and events using spreadsheets, manual workflows, and email communication. This fragmented approach led to several pain points, so we designed and developed a custom <strong>membership and event management platform</strong> with modern technologies, using a modular architecture to ensure scalability and maintainability.</p>
+            <p>The platform also includes an AI microservice powered by an LLM, exposed via an internal API, providing suggested summaries and SEO-optimized description for events. These suggestions are presented in the admin interface for quick review, embedding generative AI into the existing workflow without adding friction.</p>
+            <h3>Feature highlights</h3>
             <ul>
               <li>End-to-end enrollment automation where new members could register online, fill in their profile details, and complete the payment process fully digitally</li>
               <li>Integrated payments through a secure integration with local payment gateway, plus automatic membership renewal reminders</li>
               <li>Events management module with a dynamic events calendar, ticketing (free and paid options), automated confirmations, and attendance tracking</li>
+              <li>AI-assisted event copywriting, using a large language model to turn raw event inputs into concise, engaging, and SEO-optimized descriptions, reducing manual content work</li>
               <li>Admin dashboard with role-based access for organization administrators to manage members, track payments and create events</li>
               <li>Responsive and accessible design, a mobile-first interface ensuring inclusivity and accessibility for all members</li>
             </ul>
